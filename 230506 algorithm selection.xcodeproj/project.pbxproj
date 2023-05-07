@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A4AAF10E2A056F7900D2F08D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A4AAF10D2A056F7900D2F08D /* main.c */; };
+		A4AAF11B2A06149300D2F08D /* selection.c in Sources */ = {isa = PBXBuildFile; fileRef = A4AAF11A2A06149300D2F08D /* selection.c */; };
+		A4AAF11D2A06154200D2F08D /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = A4AAF11C2A06154200D2F08D /* test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		A4AAF10A2A056F7900D2F08D /* 230506 algorithm selection */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "230506 algorithm selection"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AAF10D2A056F7900D2F08D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A4AAF1192A06149300D2F08D /* selection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selection.h; sourceTree = "<group>"; };
+		A4AAF11A2A06149300D2F08D /* selection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = selection.c; sourceTree = "<group>"; };
+		A4AAF11C2A06154200D2F08D /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,10 @@
 		A4AAF10C2A056F7900D2F08D /* 230506 algorithm selection */ = {
 			isa = PBXGroup;
 			children = (
+				A4AAF11C2A06154200D2F08D /* test.c */,
 				A4AAF10D2A056F7900D2F08D /* main.c */,
+				A4AAF1192A06149300D2F08D /* selection.h */,
+				A4AAF11A2A06149300D2F08D /* selection.c */,
 			);
 			path = "230506 algorithm selection";
 			sourceTree = "<group>";
@@ -119,6 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AAF11D2A06154200D2F08D /* test.c in Sources */,
+				A4AAF11B2A06149300D2F08D /* selection.c in Sources */,
 				A4AAF10E2A056F7900D2F08D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

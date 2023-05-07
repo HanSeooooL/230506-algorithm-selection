@@ -5,10 +5,26 @@
 //  Created by 한설 on 2023/05/06.
 //
 
-#include <stdio.h>
+#include "selection.h"
+
+extern void TC1_Tennumber(void);
+extern void TC2_Twentyonenumber(void);
+extern void TC3_hundrednumber(void);
+static void checktime(void(*func)(void));
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    checktime(TC1_Tennumber);
+    checktime(TC2_Twentyonenumber);
+    checktime(TC3_hundrednumber);
+}
+
+void checktime(void(*func)(void))
+{
+    clock_t start, finish;
+    double duration;
+    start = clock();
+    (*func)();
+    finish = clock();
+    duration = (double)(finish - start) / CLOCKS_PER_SEC;
+    printf("\n================%lf초입니다.================\n", duration);
 }
